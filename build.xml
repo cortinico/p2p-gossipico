@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+    <project basedir="." default="build" name="P2P_Final">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <property name="file" value="nic.txt" />  
+    
+    <path id="P2P_Final.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="djep-1.0.0.jar"/>
+        <pathelement location="jep-2.3.0.jar"/>
+        <pathelement location="peersim-1.0.5.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.ucls"/>
+                <exclude name="**/*.useq"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target name="jar" depends="build">
+        <jar destfile="p2p_final.jar">
+   		<fileset dir="bin"/>
+    	<zipfileset includes="**/*.class" src="djep-1.0.0.jar"/>
+    	<zipfileset includes="**/*.class" src="jep-2.3.0.jar"/>
+    	<zipfileset includes="**/*.class" src="peersim-1.0.5.jar"/>
+    	<manifest>
+      	<attribute name="Main-Class"
+            value="peersim.Simulator"/>
+    	</manifest>
+  		</jar>
+    </target>
+    <target name="javadoc">
+        <javadoc destdir="doc/"
+           packagenames="it.ncorti.p2p.*"
+           sourcepath="src"
+           excludepackagenames="peersim.*"
+           defaultexcludes="yes"
+           author="true"
+           version="true"
+           use="true">
+           <classpath refid="P2P_Final.classpath"/>
+        </javadoc>
+    </target>
+    
+    <target depends="init" name="build">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="P2P_Final.classpath"/>
+        </javac>
+    </target>
+    <target name="Nicola">
+        <java classname="peersim.Simulator" failonerror="true" fork="yes">
+            <arg line="nic.txt"/>
+            <classpath refid="P2P_Final.classpath"/>
+        </java>
+    </target>
+    <target name="Execute">
+        <java classname="peersim.Simulator" failonerror="true" fork="yes">
+            <arg line="${file}"/>
+            <classpath refid="P2P_Final.classpath"/>
+        </java>
+    </target>
+</project>

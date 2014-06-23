@@ -1,0 +1,47 @@
+\select@language {italian}
+\contentsline {section}{\numberline {1}Gli algoritmi \emph {gossip-based}}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Algoritmi per il conteggio dei nodi}{4}{subsection.1.1}
+\contentsline {section}{\numberline {2}GOSSIPICO}{4}{section.2}
+\contentsline {section}{\numberline {3}Il modulo COUNT}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Struttura dei messaggi}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Regole di \emph {message-combining}}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Implementazione}{8}{subsection.3.3}
+\contentsline {section}{\numberline {4}Il modulo BEACON}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Il meccanismo delle schermaglie}{10}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Variazioni sul modulo COUNT}{10}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Implementazione}{10}{subsection.4.3}
+\contentsline {section}{\numberline {5}Reti dinamiche}{11}{section.5}
+\contentsline {subsection}{\numberline {5.1}Implementazione}{12}{subsection.5.1}
+\contentsline {section}{\numberline {6}Interazione}{12}{section.6}
+\contentsline {section}{\numberline {7}Ulteriori Classi}{12}{section.7}
+\contentsline {subsection}{\numberline {7.1}Altre funzioni di aggregazione}{12}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Inizializzatori}{13}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Raccolta di statistiche}{13}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Debugging}{14}{subsection.7.4}
+\contentsline {section}{\numberline {8}Performance}{14}{section.8}
+\contentsline {subsection}{\numberline {8.1}Grafici delle performance}{15}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Evoluzione del numero di messaggi IC}{15}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Velocit\`a di convergenza}{16}{subsubsection.8.1.2}
+\contentsline {subsubsection}{\numberline {8.1.3}Evoluzione in caso di disconnessione di nodi}{16}{subsubsection.8.1.3}
+\contentsline {paragraph}{Utilizzo di una funzione logistica}{17}{section*.12}
+\contentsline {section}{\numberline {9}User guide}{18}{section.9}
+\contentsline {subsection}{\numberline {9.1}Documentazione}{19}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Avvio della simulazione}{19}{subsection.9.2}
+\contentsline {section}{\numberline {A}Codice Sorgente}{20}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}Classi relative a COUNT}{20}{subsection.A.1}
+\contentsline {subsubsection}{\numberline {A.1.1}Classe \textsf {CountModule}}{20}{subsubsection.A.1.1}
+\contentsline {subsubsection}{\numberline {A.1.2}Classe \textsf {Message}}{23}{subsubsection.A.1.2}
+\contentsline {subsection}{\numberline {A.2}Classi relative a BEACON}{25}{subsection.A.2}
+\contentsline {subsubsection}{\numberline {A.2.1}Classe \textsf {CountBeaconModule}}{25}{subsubsection.A.2.1}
+\contentsline {subsubsection}{\numberline {A.2.2}Classe \textsf {Army}}{28}{subsubsection.A.2.2}
+\contentsline {subsection}{\numberline {A.3}Classi di Inizializzatori}{30}{subsection.A.3}
+\contentsline {subsubsection}{\numberline {A.3.1}Classe \textsf {CountBeaconInitializer}}{30}{subsubsection.A.3.1}
+\contentsline {subsubsection}{\numberline {A.3.2}Classe \textsf {RandomInitializer}}{31}{subsubsection.A.3.2}
+\contentsline {subsubsection}{\numberline {A.3.3}Classe \textsf {PeakInitializer}}{32}{subsubsection.A.3.3}
+\contentsline {subsubsection}{\numberline {A.3.4}Classe \textsf {LinearInitializer}}{33}{subsubsection.A.3.4}
+\contentsline {subsection}{\numberline {A.4}Sottoclassi di \textsf {Message}}{34}{subsection.A.4}
+\contentsline {subsubsection}{\numberline {A.4.1}Classe \textsf {MaxMessage}}{34}{subsubsection.A.4.1}
+\contentsline {subsubsection}{\numberline {A.4.2}Classe \textsf {MinMessage}}{34}{subsubsection.A.4.2}
+\contentsline {subsection}{\numberline {A.5}Classi di Osservatori}{35}{subsection.A.5}
+\contentsline {subsubsection}{\numberline {A.5.1}Classe \textsf {Debugger}}{35}{subsubsection.A.5.1}
+\contentsline {subsubsection}{\numberline {A.5.2}Classe \textsf {Statistics}}{35}{subsubsection.A.5.2}
