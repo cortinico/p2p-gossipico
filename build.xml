@@ -9,7 +9,7 @@
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.7"/>
     <property name="source" value="1.7"/>
-    <property name="file" value="nic.txt" />  
+    <property name="file" value="example.conf" />  
     
     <path id="P2P_Final.classpath">
         <pathelement location="bin"/>
@@ -61,12 +61,6 @@
             <src path="src"/>
             <classpath refid="P2P_Final.classpath"/>
         </javac>
-    </target>
-    <target name="Nicola">
-        <java classname="peersim.Simulator" failonerror="true" fork="yes">
-            <arg line="nic.txt"/>
-            <classpath refid="P2P_Final.classpath"/>
-        </java>
     </target>
     <target name="Execute">
         <java classname="peersim.Simulator" failonerror="true" fork="yes">
