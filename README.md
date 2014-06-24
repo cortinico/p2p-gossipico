@@ -7,6 +7,8 @@ This software is a simulation of the Gossipico protocol. The protocol is describ
 This project is the final exam of the Peer-2-Peer course at Master Degree in Computer Science at University of Pisa.
 The simulation is written in Java ad use the Peersim Simulator ([Official Web](http://peersim.sourceforge.net/)).
 
+![GOSSIPICO](https://raw.githubusercontent.com/cortinico/p2p-gossipico/master/doc/gossip_image.png)
+
 ## Documentation
 
 For better understanding the workflow of the simulation you can read:
